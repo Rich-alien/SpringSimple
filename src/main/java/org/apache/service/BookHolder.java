@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 @Scope(value = "session",proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class BookHolder {
-    private List<Book> books = new ArrayList<Book>();
+    private List<Book> books = new ArrayList<> ();
     private int count =1;
     public BookHolder() {
     }
