@@ -9,7 +9,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import javax.swing.*;
 
 @Configuration
-@ComponentScan
+@ComponentScan("org.apache")
 public class ApplicationStart {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationStart.class);

@@ -3,10 +3,11 @@ package org.apache.controller;
 import org.apache.model.Book;
 import org.apache.service.BookHolder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@Controller
 public class BookControllerAjax {
     @Autowired
     private BookHolder bookHolder;
